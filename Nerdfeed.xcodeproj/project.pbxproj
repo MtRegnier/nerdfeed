@@ -12,6 +12,8 @@
 		35665BB51B98DF2E0040216F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35665BB41B98DF2E0040216F /* Images.xcassets */; };
 		35665BB81B98DF2E0040216F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35665BB61B98DF2E0040216F /* LaunchScreen.xib */; };
 		35665BC41B98DF2E0040216F /* NerdfeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35665BC31B98DF2E0040216F /* NerdfeedTests.m */; };
+		35665BCF1B98ECFE0040216F /* BNRCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35665BCE1B98ECFE0040216F /* BNRCoursesViewController.m */; };
+		35665BD21B98F7320040216F /* BNRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35665BD11B98F7320040216F /* BNRWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 		35665BBD1B98DF2E0040216F /* NerdfeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NerdfeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35665BC21B98DF2E0040216F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35665BC31B98DF2E0040216F /* NerdfeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerdfeedTests.m; sourceTree = "<group>"; };
+		35665BCD1B98ECFE0040216F /* BNRCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCoursesViewController.h; sourceTree = "<group>"; };
+		35665BCE1B98ECFE0040216F /* BNRCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCoursesViewController.m; sourceTree = "<group>"; };
+		35665BD01B98F7320040216F /* BNRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRWebViewController.h; sourceTree = "<group>"; };
+		35665BD11B98F7320040216F /* BNRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				35665BB11B98DF2E0040216F /* AppDelegate.h */,
-				35665BB21B98DF2E0040216F /* AppDelegate.m */,
+				35665BCD1B98ECFE0040216F /* BNRCoursesViewController.h */,
+				35665BD01B98F7320040216F /* BNRWebViewController.h */,
 				35665BB41B98DF2E0040216F /* Images.xcassets */,
+				35665BB21B98DF2E0040216F /* AppDelegate.m */,
+				35665BCE1B98ECFE0040216F /* BNRCoursesViewController.m */,
+				35665BD11B98F7320040216F /* BNRWebViewController.m */,
 				35665BB61B98DF2E0040216F /* LaunchScreen.xib */,
 				35665BAD1B98DF2E0040216F /* Supporting Files */,
 			);
@@ -210,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35665BD21B98F7320040216F /* BNRWebViewController.m in Sources */,
 				35665BB31B98DF2E0040216F /* AppDelegate.m in Sources */,
 				35665BB01B98DF2E0040216F /* main.m in Sources */,
+				35665BCF1B98ECFE0040216F /* BNRCoursesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
