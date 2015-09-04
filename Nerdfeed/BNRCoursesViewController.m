@@ -67,8 +67,10 @@
     
     self.webViewController.title = course[@"title"];
     self.webViewController.URL = URL;
+    if (!self.splitViewController) {
     [self.navigationController pushViewController:self.webViewController 
                                          animated:YES];
+    }
 }
 
 #pragma mark NSURL Setup

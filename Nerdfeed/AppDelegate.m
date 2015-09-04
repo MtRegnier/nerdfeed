@@ -29,7 +29,23 @@
     BNRWebViewController *wvc = [[BNRWebViewController alloc] init];
     cvc.webViewController = wvc;
     
-    self.window.rootViewController = masterNav;
+    // iPad check for UISplitViewController
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        // Web view controller has to be added to nav controller
+        UINavigationController *detailNav = [[UINavigationController alloc] initWithRootViewController:wvc];
+        
+        UISplitViewController *svc = [[UISplitViewController alloc] init];
+        
+        // Set delegate of split view to the detail vc
+        svc.delegate = wvc;
+        
+        svc.viewControllers = @[masterNav, detailNav];
+        
+        // Set root view controller to the split view
+        self.window.rootViewController = svc;
+    } else {
+        self.window.rootViewController = masterNav;
+    }
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

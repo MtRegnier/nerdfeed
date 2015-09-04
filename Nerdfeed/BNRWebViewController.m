@@ -8,7 +8,7 @@
 
 #import "BNRWebViewController.h"
 
-@interface BNRWebViewController ()
+@interface BNRWebViewController () 
 
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) UIToolbar *toolbar;
@@ -66,6 +66,13 @@
     }
     
     [self.webView goForward];
+}
+
+#pragma mark Split View Controller Setup
+
+- (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
+{
+    
 }
 
 @end
